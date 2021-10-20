@@ -1,0 +1,248 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-20T21:45:49.739Z",
+        "before": [
+          {
+            "result": {
+              "duration": 484000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validating account api calls",
+        "description": "",
+        "id": "validating-bank-rest-api-calls;validating-account-api-calls",
+        "after": [
+          {
+            "result": {
+              "duration": 351000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7172562000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user creates account with api call with data",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_creates_account_with_api_call_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accountType",
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "balance",
+                  "100000"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3761000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user validates status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat steps.BankAppApiSteps.user_validates_that_account_is_created_with_api_get_call(BankAppApiSteps.java:50)\n\tat ✽.user validates that account is created with api get call(file:///Users/galinaluca/IdeaProjects/MindtekCucumberAutomation/src/test/resources/features/BankAppApiTests.feature:9)\n",
+              "duration": 1484850000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user validates that account is created with api get call",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_validates_that_account_is_created_with_api_get_call()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 269000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user updates account with  api call with data",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_updates_account_with_api_call_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accountType",
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "balance",
+                  "120000"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user validates status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user validates that account is updated with api get call",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_validates_that_account_is_updated_with_api_get_call()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user deletes account with api call",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_deletes_account_with_api_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user validates status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user validates that account is deleted with api get call",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_validates_that_account_is_deleted_with_api_get_call()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@MB2P-205"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Bank Rest API calls",
+    "description": "",
+    "id": "validating-bank-rest-api-calls",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/BankAppApiTests.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@MB2P-205",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 6
+        }
+      },
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 16
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 28
+        }
+      }
+    ]
+  }
+]
