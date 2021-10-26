@@ -1,13 +1,798 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-10-20T21:45:49.739Z",
+        "start_timestamp": "2021-10-22T01:07:39.926Z",
         "before": [
           {
             "result": {
-              "duration": 484000,
+              "duration": 642000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Validating order accounts are in right order",
+        "description": "",
+        "id": "validating-query-parameters-in-get-account-calls;validating-order-accounts-are-in-right-order;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 545000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8141404000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user creates multiple accounts with api call with data",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_creates_multiple_accounts_with_api_call_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accountType",
+                  "balance"
+                ]
+              },
+              {
+                "cells": [
+                  "Checking",
+                  "1000"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit",
+                  "2000"
+                ]
+              },
+              {
+                "cells": [
+                  "Savings",
+                  "3000"
+                ]
+              },
+              {
+                "cells": [
+                  "College",
+                  "10000"
+                ]
+              },
+              {
+                "cells": [
+                  "Mortgage",
+                  "100000"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 635101000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user gets all accounts with api call in \"asc\" order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asc\"",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_gets_all_accounts_with_api_call_in_order(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5109000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user validates status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47074000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user validates that accounts are in \"asc\" order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asc\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_that_accounts_are_in_order(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MB2P-260"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T01:07:48.865Z",
+        "before": [
+          {
+            "result": {
+              "duration": 185000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Validating order accounts are in right order",
+        "description": "",
+        "id": "validating-query-parameters-in-get-account-calls;validating-order-accounts-are-in-right-order;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 202000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3235947000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user creates multiple accounts with api call with data",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_creates_multiple_accounts_with_api_call_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accountType",
+                  "balance"
+                ]
+              },
+              {
+                "cells": [
+                  "Checking",
+                  "1000"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit",
+                  "2000"
+                ]
+              },
+              {
+                "cells": [
+                  "Savings",
+                  "3000"
+                ]
+              },
+              {
+                "cells": [
+                  "College",
+                  "10000"
+                ]
+              },
+              {
+                "cells": [
+                  "Mortgage",
+                  "100000"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 597828000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user gets all accounts with api call in \"desc\" order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"desc\"",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_gets_all_accounts_with_api_call_in_order(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 152000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user validates status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6515000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user validates that accounts are in \"desc\" order",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"desc\"",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_that_accounts_are_in_order(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MB2P-260"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T01:07:52.733Z",
+        "before": [
+          {
+            "result": {
+              "duration": 56000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Validating limit query parameter in get account call",
+        "description": "",
+        "id": "validating-query-parameters-in-get-account-calls;validating-limit-query-parameter-in-get-account-call;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 260000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2859174000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user creates multiple accounts with api call with data",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_creates_multiple_accounts_with_api_call_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accountType",
+                  "balance"
+                ]
+              },
+              {
+                "cells": [
+                  "Checking",
+                  "1000"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit",
+                  "2000"
+                ]
+              },
+              {
+                "cells": [
+                  "Savings",
+                  "3000"
+                ]
+              },
+              {
+                "cells": [
+                  "College",
+                  "10000"
+                ]
+              },
+              {
+                "cells": [
+                  "Mortgage",
+                  "100000"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 706498000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user gets all accounts with api call in 2 limit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_gets_all_accounts_with_api_call_in_limit(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 402000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user validates status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10679000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user validates that accounts are in 2 limit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_that_accounts_are_in_limit(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MB2P-260"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@MB2P-261"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T01:07:56.330Z",
+        "before": [
+          {
+            "result": {
+              "duration": 58000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Validating limit query parameter in get account call",
+        "description": "",
+        "id": "validating-query-parameters-in-get-account-calls;validating-limit-query-parameter-in-get-account-call;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 248000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2914354000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user creates multiple accounts with api call with data",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_creates_multiple_accounts_with_api_call_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accountType",
+                  "balance"
+                ]
+              },
+              {
+                "cells": [
+                  "Checking",
+                  "1000"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit",
+                  "2000"
+                ]
+              },
+              {
+                "cells": [
+                  "Savings",
+                  "3000"
+                ]
+              },
+              {
+                "cells": [
+                  "College",
+                  "10000"
+                ]
+              },
+              {
+                "cells": [
+                  "Mortgage",
+                  "100000"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 654761000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user gets all accounts with api call in 4 limit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_gets_all_accounts_with_api_call_in_limit(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 434000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user validates status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4689000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user validates that accounts are in 4 limit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_that_accounts_are_in_limit(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MB2P-260"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@MB2P-261"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T01:07:59.921Z",
+        "before": [
+          {
+            "result": {
+              "duration": 46000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Validating limit query parameter in get account call",
+        "description": "",
+        "id": "validating-query-parameters-in-get-account-calls;validating-limit-query-parameter-in-get-account-call;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 149000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2836786000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user creates multiple accounts with api call with data",
+            "match": {
+              "location": "steps.BankAppApiSteps.user_creates_multiple_accounts_with_api_call_with_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accountType",
+                  "balance"
+                ]
+              },
+              {
+                "cells": [
+                  "Checking",
+                  "1000"
+                ]
+              },
+              {
+                "cells": [
+                  "Credit",
+                  "2000"
+                ]
+              },
+              {
+                "cells": [
+                  "Savings",
+                  "3000"
+                ]
+              },
+              {
+                "cells": [
+                  "College",
+                  "10000"
+                ]
+              },
+              {
+                "cells": [
+                  "Mortgage",
+                  "100000"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 542938000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user gets all accounts with api call in 10 limit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 40
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_gets_all_accounts_with_api_call_in_limit(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 232000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user validates status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 27
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2203000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user validates that accounts are in 10 limit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 36
+                }
+              ],
+              "location": "steps.BankAppApiSteps.user_validates_that_accounts_are_in_limit(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MB2P-260"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@MB2P-261"
+          }
+        ]
+      }
+    ],
+    "name": "Validating query parameters in GET account calls",
+    "description": "",
+    "id": "validating-query-parameters-in-get-account-calls",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/BankAppApiQueryParametersTest.feature",
+    "tags": [
+      {
+        "name": "@MB2P-260",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 11
+        }
+      },
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 16
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-22T01:08:03.337Z",
+        "before": [
+          {
+            "result": {
+              "duration": 45000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +807,7 @@
         "after": [
           {
             "result": {
-              "duration": 351000,
+              "duration": 142000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +820,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7172562000,
+              "duration": 571015000,
               "status": "passed"
             },
             "line": 5,
@@ -61,7 +846,7 @@
           },
           {
             "result": {
-              "duration": 3761000,
+              "duration": 140000,
               "status": "passed"
             },
             "line": 8,
@@ -79,8 +864,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\n\tat steps.BankAppApiSteps.user_validates_that_account_is_created_with_api_get_call(BankAppApiSteps.java:50)\n\tat ✽.user validates that account is created with api get call(file:///Users/galinaluca/IdeaProjects/MindtekCucumberAutomation/src/test/resources/features/BankAppApiTests.feature:9)\n",
-              "duration": 1484850000,
+              "error_message": "java.lang.NullPointerException\n\tat steps.BankAppApiSteps.user_validates_that_account_is_created_with_api_get_call(BankAppApiSteps.java:54)\n\tat ✽.user validates that account is created with api get call(file:///Users/galinaluca/IdeaProjects/MindtekCucumberAutomation/src/test/resources/features/BankAppApiTests.feature:9)\n",
+              "duration": 553656000,
               "status": "failed"
             },
             "line": 9,
@@ -92,7 +877,7 @@
           },
           {
             "result": {
-              "duration": 269000,
+              "duration": 191000,
               "status": "skipped"
             },
             "line": 10,
@@ -118,7 +903,7 @@
           },
           {
             "result": {
-              "duration": 10000,
+              "duration": 7000,
               "status": "skipped"
             },
             "line": 13,
@@ -136,7 +921,7 @@
           },
           {
             "result": {
-              "duration": 7000,
+              "duration": 8000,
               "status": "skipped"
             },
             "line": 14,
@@ -148,7 +933,7 @@
           },
           {
             "result": {
-              "duration": 6000,
+              "duration": 2000,
               "status": "skipped"
             },
             "line": 15,
@@ -160,7 +945,7 @@
           },
           {
             "result": {
-              "duration": 5000,
+              "duration": 6000,
               "status": "skipped"
             },
             "line": 16,
@@ -178,7 +963,7 @@
           },
           {
             "result": {
-              "duration": 5000,
+              "duration": 3000,
               "status": "skipped"
             },
             "line": 17,
@@ -241,6 +1026,699 @@
         "location": {
           "line": 1,
           "column": 28
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-22T01:08:04.499Z",
+        "before": [
+          {
+            "result": {
+              "duration": 110000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Validating employees from specific department in UI matches with API data",
+        "description": "",
+        "id": "validating-hr-app-api-calls;validating-employees-from-specific-department-in-ui-matches-with-api-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 186000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9012167000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to HR Application",
+            "match": {
+              "location": "steps.HRProjectDay.user_navigates_to_HR_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1645731000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in with username \"Mindtek\" password \"MindtekStudent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mindtek\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"MindtekStudent\"",
+                  "offset": 46
+                }
+              ],
+              "location": "steps.HRAppSteps.user_logs_in_with_username_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 460447000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user selects \"IT\" department",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IT\"",
+                  "offset": 13
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_selects_department(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 819954000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user stores ui data from selected department",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_stores_ui_data_from_selected_department()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat utilities.JDBCUtils.runQuery(JDBCUtils.java:46)\n\tat steps.HRAppAPISteps.user_sends_get_employees_api_call_for_department(HRAppAPISteps.java:55)\n\tat ✽.user sends get employees api call for \"IT\" department(file:///Users/galinaluca/IdeaProjects/MindtekCucumberAutomation/src/test/resources/features/HRAppAPITest.feature:9)\n",
+              "duration": 16442000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user sends get employees api call for \"IT\" department",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IT\"",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_sends_get_employees_api_call_for_department(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user validates 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user validates ui data matches with api data with \"IT\" department employees",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IT\"",
+                  "offset": 50
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_ui_data_matches_with_api_data_with_department_employees(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user gets employees from DB who works in \"IT\" department",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IT\"",
+                  "offset": 41
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_gets_employees_from_DB_who_works_in_department(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user validates ui data matches with DB data",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_validates_ui_data_matches_with_DB_data()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MB2P-150"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T01:08:16.493Z",
+        "before": [
+          {
+            "result": {
+              "duration": 78000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Validating employees from specific department in UI matches with API data",
+        "description": "",
+        "id": "validating-hr-app-api-calls;validating-employees-from-specific-department-in-ui-matches-with-api-data;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 828000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 356724000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to HR Application",
+            "match": {
+              "location": "steps.HRProjectDay.user_navigates_to_HR_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 177347000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user logs in with username \"Mindtek\" password \"MindtekStudent\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Mindtek\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"MindtekStudent\"",
+                  "offset": 46
+                }
+              ],
+              "location": "steps.HRAppSteps.user_logs_in_with_username_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90433000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user selects \"Marketing\" department",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Marketing\"",
+                  "offset": 13
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_selects_department(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33427824000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user stores ui data from selected department",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_stores_ui_data_from_selected_department()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\n\tat utilities.JDBCUtils.runQuery(JDBCUtils.java:46)\n\tat steps.HRAppAPISteps.user_sends_get_employees_api_call_for_department(HRAppAPISteps.java:55)\n\tat ✽.user sends get employees api call for \"Marketing\" department(file:///Users/galinaluca/IdeaProjects/MindtekCucumberAutomation/src/test/resources/features/HRAppAPITest.feature:9)\n",
+              "duration": 2366000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "user sends get employees api call for \"Marketing\" department",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Marketing\"",
+                  "offset": 38
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_sends_get_employees_api_call_for_department(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user validates 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user validates ui data matches with api data with \"Marketing\" department employees",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Marketing\"",
+                  "offset": 50
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_ui_data_matches_with_api_data_with_department_employees(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user gets employees from DB who works in \"Marketing\" department",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Marketing\"",
+                  "offset": 41
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_gets_employees_from_DB_who_works_in_department(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user validates ui data matches with DB data",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_validates_ui_data_matches_with_DB_data()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MB2P-150"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-22T01:08:50.588Z",
+        "before": [
+          {
+            "result": {
+              "duration": 193000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.SetUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validating employees api call",
+        "description": "",
+        "id": "validating-hr-app-api-calls;validating-employees-api-call",
+        "after": [
+          {
+            "result": {
+              "duration": 204000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.TearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 375513000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user creates employee with api post call data",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_creates_employee_with_api_post_call_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "First Name",
+                  "John"
+                ]
+              },
+              {
+                "cells": [
+                  "Last Name",
+                  "Doe"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 348000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user validates 201 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 157405000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user validates employees is created with api  get call",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_validates_employees_is_created_with_api_get_call()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 296000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user validates 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_status_code(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135333000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user updates employee data",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_updates_employee_data(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "First Name",
+                  "Patel"
+                ]
+              },
+              {
+                "cells": [
+                  "Last Name",
+                  "Harsh"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 115000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user validates 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 155103000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user validates employee info is updated with api get call",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_validates_employee_info_is_updated_with_api_get_call()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user validates 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_status_code(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156206000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user deletes employee with api delete call",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_deletes_employee_with_api_delete_call()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user validates 204 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 118951000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user validates employee is deleted with api get call",
+            "match": {
+              "location": "steps.HRAppAPISteps.user_validates_employee_is_deleted_with_api_get_call()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected:\u003c404\u003e but was:\u003c200\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:645)\n\tat org.junit.Assert.assertEquals(Assert.java:631)\n\tat steps.HRAppAPISteps.user_validates_status_code(HRAppAPISteps.java:68)\n\tat ✽.user validates 404 status code(file:///Users/galinaluca/IdeaProjects/MindtekCucumberAutomation/src/test/resources/features/HRAppAPITest.feature:36)\n",
+              "duration": 338000,
+              "status": "failed"
+            },
+            "line": 36,
+            "name": "user validates 404 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 15
+                }
+              ],
+              "location": "steps.HRAppAPISteps.user_validates_status_code(int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MB2P-150"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@MB2P-217"
+          },
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Validating HR App api calls",
+    "description": "",
+    "id": "validating-hr-app-api-calls",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/HRAppAPITest.feature",
+    "tags": [
+      {
+        "name": "@MB2P-150",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 12
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 24
         }
       }
     ]

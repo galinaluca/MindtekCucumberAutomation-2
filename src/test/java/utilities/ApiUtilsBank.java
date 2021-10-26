@@ -3,6 +3,8 @@ package utilities;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
+import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 
 public class ApiUtilsBank {
@@ -12,6 +14,17 @@ public class ApiUtilsBank {
                 .and().accept(ContentType.JSON)
                 .and().auth().oauth2(generateToken())
                 .when().get(endpoint);
+           response.then().log().all();
+        return response;
+    }
+
+    public static Response getCall(String endpoint, Map<String,Object> queryParams) {
+        Response response = given().baseUri(ConfigReader.getProperty("BankAppBaseUri"))
+                .and().accept(ContentType.JSON)
+                .and().auth().oauth2(generateToken())
+                .and().queryParams(queryParams)
+                .when().get(endpoint);
+        response.then().log().all();
         return response;
     }
 
